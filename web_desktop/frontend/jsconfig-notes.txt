@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    // ES6機能（Promiseなど）を使えるようにする
+    "target": "ES6",
+
+    // 標準ライブラリ（DOM: ブラウザのAPI含む）を使用
+    "lib": ["ES6", "DOM"],
+
+    // 「@/」を「src/」に置き換えるパスエイリアス設定
+    // 例： import Button from "@/components/Button" → src/components/Button
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+
+  // コンパイル・補完対象から除外するフォルダ
+  "exclude": [
+    "node_modules", // 外部ライブラリ（処理対象外）
+    "dist"          // ビルド出力先（処理対象外）
+  ]
+}

@@ -1,0 +1,28 @@
+# 環境変数ファイル
+.env
+.env.*
+**/.env
+
+
+# 除外しない
+!.env.example
+
+# OS依存ファイル
+.DS_Store
+Thumbs.db
+
+# IDE・エディタ設定
+.vscode/
+.idea/
+
+# Java / Maven
+**/target/
+**/*.class
+**/*.jar
+
+# Vue / Node.js
+web_frontend/node_modules/
+web_frontend/dist/
+
+# その他不要ファイル
+*.log
